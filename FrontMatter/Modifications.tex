@@ -1,0 +1,17 @@
+%Create line through V symbol \volume
+\makeatletter
+\DeclareRobustCommand{\volume}{\text{\volumedash}V}
+\newcommand{\volumedash}{%
+  \makebox[0pt][l]{%
+    \ooalign{\hfil\hphantom{$\m@th V$}\hfil\cr\kern0.08em\textbf{--}\hfil\cr}%
+  }%
+}
+\makeatother
+
+%Prevent paragraph indent directly after figure
+\makeatletter
+\renewcommand\float@endH{\@endfloatbox\vskip\intextsep
+  \if@flstyle\setbox\@currbox\float@makebox\columnwidth\fi
+  \box\@currbox\vskip\intextsep\relax\@doendpe}
+\makeatother
+

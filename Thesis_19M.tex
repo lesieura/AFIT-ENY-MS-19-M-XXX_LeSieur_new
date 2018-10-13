@@ -1,0 +1,75 @@
+\documentclass[12pt,letterpaper,oneside]{book}
+\title{AFIT-ENY-MS-19-M-XXX_LeSieur_new}
+\usepackage{FrontMatter/afitThesis}
+\usepackage{FrontMatter/sf298}
+\usepackage{booktabs, multirow, tabularx} %tables
+\usepackage{adjustbox} %rotates pictures in a document
+\usepackage{subfig} %puts pictures side-by-side
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{gensymb}
+\usepackage{nicefrac}
+\usepackage{graphicx}
+\usepackage{verbatim} %allows for multi-line comments: begin{comment}...end{comment}
+\usepackage[capitalise,noabbrev]{cleveref}
+\usepackage{setspace}
+\usepackage[nocompress]{cite}
+\usepackage{caption}
+%Picture Borders
+\setlength{\fboxsep}{0pt} 
+\setlength{\fboxrule}{1pt}
+%
+
+\allowdisplaybreaks %Spacing with pictures, place after amsmath
+\include{FrontMatter/Modifications} 
+\include{FrontMatter/FrontPage} %Title Pg Inputs
+\include{Glossary} 
+
+
+\begin{document}
+
+%\frontmatter
+ %    \flyleaf
+    % \disclaimerpage
+    % \titlepageAFIT
+    % \committeepage
+ %    \include{FrontMatter/abstract} 
+    % \include{FrontMatter/acknowledgements} 
+    % \tableofcontents 
+    % \listoffigures          
+    % \listoftables    
+    % \singlespacing
+    % \printglossary[type=\acronymtype,title=List of Acronyms,toctitle=List of Acronyms] 
+    % \addtocontents{toc}{\vspace{0.4\normalbaselineskip}}
+    % \renewcommand{\nomname}{List of Symbols}\printnomenclature
+    % \doublespacing
+
+\mainmatter	
+	\include{Ch1/thesis-ch1}
+	\include{Ch2/thesis-ch2}
+	\include{Ch3/thesis-ch3}
+%	\include{Ch4/thesis-ch4}
+%	\include{Ch5/thesis-ch5}
+
+\appendix
+%	\include{AppendixA/thesis-AppA}
+%	\include{AppendixB/thesis-AppB}
+%	\include{AppendixC/thesis-AppC} 
+%	\include{AppendixD/thesis-AppD} 
+%	\include{AppendixE/thesis-AppE} 
+
+\bibliographystyle{aiaa}
+\bibliography{Mendeley}
+
+% SF298, but in Front Matter folder
+\backmatter
+%        \singlespace                                       
+%        \setlength\bibsep{\baselineskip}
+%        \bibliographystyle{apacite}
+%        \renewcommand\bibname{Bibliography}
+%        \bibliography{Ocampo_bibtex_thesis.bib} 
+
+%	\input{FrontMatter/SF298}
+	
+	
+\end{document}

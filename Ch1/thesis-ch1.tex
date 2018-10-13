@@ -1,0 +1,61 @@
+\chapter{Introduction} \label{chap:1}
+
+%-----------------------------------------------------------------------
+\section{Background}
+%-----------------------------------------------------------------------
+
+Since the end of the Second World War, the \gls{USAF} has emphasized reducing collateral damage and increasing aircraft survivability in combat operations \cite{SurvivabilityArticle,CollateralDamageNPS}. These two efforts are not always complementary, as the weapons package needed for minimal risk of civilian casualties may demand the use of additional military personnel and airframes. This creates a great burden for military commanders, who must delicately balance \gls{DoD} policies and potential political ramifications with subjecting humans and expensive assets to hostile environments. Therefore, armament selection is of paramount importance when planning attack missions. 
+
+Current military strategy constrains weapons experts to employing munitions with predetermined explosives capacities. After considering parameters such as warhead size and body construction, experts can estimate the number of munitions required to impose a desired level of damage against the target of interest, formulating a ``weapons package." While this process is usually sufficient when engaging large-scale isolated targets, issues arise when a strike is required in a dynamic environment featuring civilian populations and/or nonmilitary structures and assets. In these situations, the issues of fragmentation patterns and blast effects manifest as potential sources of unintended consequences. Understanding and controlling these factors play a significant role in modern military weaponeering and in particularly warhead design. 
+
+Warhead design encompasses all aspects of developing and building the explosive unit contained within a munition. Although weapon detonation events involve complex interactions between the explosive charge and the warhead casing, fragmenting munitions generally exhibit a predictable detonation sequence. As the explosives inside a munition's warhead are detonated, the energy released from the rapid exothermic (release of heat) reaction generates pressure on the weapon’s casing, causing it to expand and experience material deformation. Once the stresses imparted on the casing exceed the material’s strength, the weapon’s internal structure fails and fractures. This leads to the formation of fragments, which are accelerated and propelled to the target by explosive gases created during the detonation \cite{Cooper1996}. Material properties are a driving factor behind the casing’s fracture behavior and fragment velocity, which ultimately determine the lethality and effectiveness of a given munition’s design. Traditional weapon casing production utilizes conventional metal fabrication methods (ex. casting, forging, etc.); however, \gls{AM} introduces...  
+
+%A potential 
+
+\gls{AM} refers to any production technique where a component is constructed in a vertical build direction using a sequential layering scheme \cite{OverviewofAM_OHara}. In most situations, the user first virtually models the component in a \gls{CAD} software package, which is then exported to the \gls{AM} machine, providing a manufacturing blueprint. While there are many different methods of \gls{AM}, \gls{DMLS} was selected to build the test specimens in this research, due to its well-established history amongst \gls{AM} methods and its ability to print metal components. In \gls{DMLS}, components are constructed using a laser and fine powder. First, the machine ``slices" the supplied \gls{CAD} model into thin cross sectional layers, creating a specific scan strategy (how the laser moves over each individual layer). Then, a thin layer of metal powder is deposited on a build plate, before the machine's laser heats and sinters the powder along a build path determined by the cross sectional layers. As the sintered powder cools, a solid structure forms, and the process is repeated in a series of sequential layers until the entire component is fully constructed.
+
+Since \gls{AM}-produced parts are built on top of a freestanding substrate (plate which serves as surface for the machine to deposit material) in lieu of a predefined mold, the builder can make modifications or construct an entirely new component simply by exporting an updated \gls{CAD} file to the machine. This significantly simplifies both the manufacturing process and the ability to alter a component's design, making \gls{AM} inherently customizable in nature \cite{Furumoto}.
+ 
+%-------------------------------------------------------------------
+\section{Motivation}
+%-----------------------------------------------------------------------
+Warhead and weapons design are foundational in the study of military weaponeering. Explosive capacity, blast effects, and fragmentation pattern (how the weapon breaks apart after it is detonated) heavily contribute to a weapon's and overall effectiveness and employability in combat operations. While the \gls{DoD} has a wide of array of munitions of varying sizes and explosive capabilities in its current arsenal, there is currently no widespread solution for designing munitions around a specific target. \gls{AM} presents a potential pathway to maximum weapon effectiveness by allowing munitions experts to custom-build munitions for a given mission. By optimizing weapons and their associated effects around the mission itself, targeteers and weapons experts could formulate attack strategies which require the least amount of assets and personnel as possible, while minimizing collateral damage.  
+
+Currently, there is very little documented research regarding incorporating \gls{AM}-printed metals into applications involving explosive environments. Distinct fabrication techniques commonly found in \gls{AM} create unique internal features not normally found in conventional production methods. For instance, at least a small amount of defects and micropores are always present in additively manufactured materials due to interactions between the laser, powder, and previously deposited layers \cite{ChoiSLMDensity}. Before integrating \gls{AM} into weaponry design, further research needs to investigate the behavior of additively manufactured metals under an explosive loading to determine if \gls{AM} is a suitable method for warhead construction.
+
+
+%-----------------------------------------------------------------------
+\section{Problem Statement}
+\label{ProblemStatement}
+%-----------------------------------------------------------------------
+
+In modern military combat operations, the extensive use of explosive weaponry can cause collateral damage, especially when the target is within close proximity to civilian populations. To mitigate unintended consequences, military targeteers must formulate ``weapons packages" to achieve mission success with the minimum amount of firepower necessary. Unfortunately, they are currently limited to utilizing only ready-made weapons with pre-determined capabilities, meaning the munitions are not specifically designed for the target of interest. Coupled with the need to balance objectives with rules of engagements, commanders may need to add additional sorties and aircraft to ensure mission completion, increasing exposure to enemy fire. By incorporating \gls{AM} into warhead design, weapons experts could custom-build munitions for a specific target set, increasing attack efficiency and aircraft survivability while further reducing unintended consequences \cite{SurvivabilityArticle}. 
+
+
+%-----------------------------------------------------------------------
+\section{Scope \& Objectives}
+%-----------------------------------------------------------------------
+
+The focus of this research is to investigate and analyze the deformation and fragmentation behavior of \gls{AM}-printed metal cylindrical casings subjected to an explosive loading. The primary properties studied in this experiment are material fragmentation velocity and resulting fragment mass distribution; however, strain rates calculated during the detonations will also yield information regarding the material's ductility and resistance to fracture. After testing is complete and material properties are calculated, follow-on analysis will compare collected data with established fragmentation theories and equations, providing a better understanding of how additively manufactured metals perform in explosive environments. The scope of this research is obtained by adhering to the following objectives:
+
+\begin{enumerate}
+\item Detonate \gls{AM}-printed cylindrical casings and record test events using high-speed imaging
+\item Analyze casing reactions to explosive loading using diagnostic tools and to determine material properties 
+\item Compare the fragmentation behavior of the additively manufactured samples to conventionally produced metals using traditional fragmentation theories and equations
+\end{enumerate}
+
+%-----------------------------------------------------------------------
+\section{Methodology}
+%-----------------------------------------------------------------------
+
+\gls{CAD} models of the desired test samples were provided to Oregon-based \gls{AM} company I3DMFG for machining using 15-5PH Stainless Steel powder. In total, 90 samples were produced and ultimately tested at \gls{SNL} in Albuquerque, New Mexico. Before they were detonated, the test specimens were loaded with the explosive \gls{PETN}, coupled with \glspl{EBW}. Finally, samples were detonated inside specialized indoor blast chambers, where the casing expansion and fragmentation events were captured using multiple high-speed cameras \cite{TeledyneRP-80}. Following each test, the resulting fragments were collected and individually weighed for follow-on mass distribution analysis. This process was repeated until all samples were detonated.
+  
+Following test completion, the collected experimental data underwent \gls{DIC} analysis. \gls{DIC} is a non-contact optical tracking method which captures the deformation and fracture behavior of materials in motion \cite{DICimageObservations}. This is accomplished by ``following" pixel movements between multiple images. Due to its ability to quantify material behavior in dynamic environments (materials in motion), \gls{DIC} is extremely useful for calculating material strain and fragment velocity \cite{ReuDICapplication}. For this research, \gls{DIC} was performed on images obtained by the high-speed cameras to track casing expansion and movement of fragments resulting from the explosive detonation.  
+
+Results obtained from \gls{DIC} analysis were compared to fragmentation models of conventional metal casings developed in previous research to determine if additively manufactured metals are suitable for use in explosives applications. The primary fragmentation equations used for comparison purposes were the Gurney cylindrical casing equation and Mott fragmentation model (further detailed in Chapter II), which are heavily utilized in weaponeering and explosives research to predict fragment velocity and size/mass distribution, respectively.
+
+%-----------------------------------------------------------------------
+\section{Thesis Outline}
+%-----------------------------------------------------------------------
+
+This chapter provided a brief overview of the research presented in this thesis and why it is relevant to \gls{USAF} and \gls{DoD} interests. The following chapter presents a detailed review of the background and theory applicable to this research. Chapter III covers the methodology behind the research's data collection techniques, while the actual results are provided in Chapter IV. Finally, analysis and a summary of the results is covered in Chapter V, along with a discussion of recommended future research efforts.   

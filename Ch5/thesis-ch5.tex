@@ -1,0 +1,154 @@
+\chapter{Conclusions}
+\label{chap:5}
+
+%-----------------------------------------------------------------------
+%Chapter 5 Conclusions and Recommendations
+%-----------------------------------------------------------------------
+
+% Nomenclature for Chapter 5
+\nomenclature{$\beta$}{elevator deflection angle}
+
+% Acronyms for Chapter 5
+\newacronym{leo}{LEO}{Low-Earth Orbit}
+\newacronym{gevs}{GEVS}{General Environmental Verification Specification}
+
+%http://dissertationedd.usc.edu/the-purpose-of-chapter-5.html
+
+%-----------------------------------------------------------------------
+\section{Chapter Overview}
+%-----------------------------------------------------------------------
+% [WHY DOES IT MATTER]
+% Write the introduction to include the problem, purpose, research questions and brief description of the methodology.
+
+The United States Air Force's interest in disaggregated space architectures continues to grow. CubeSats are a very good vehicle for technology maturation and are becoming more attractive for real-world operations and tactical warfighting support. The power demand on CubeSats will undoubtedly continue to increase and this research is trying to address one small aspect of this issue.
+
+CubeSat popularity in the aerospace industry continues to increase and so the expected number of small satellites will continue to grow. Therefore, satellite deployment mechanisms that prohibit the installations of more panels due to complexity and bulk requires the development of a more elegant method of deployment. Increase in popularity and the miniaturization of electronic components has driven power demands to the point that CubeSats will require additional solar panel folds to operate all of its electronics. The problem is, traditional CubeSat hinges are bulky and do not permit additional folds without encroaching into payload volume due to the increased thickness of their stowed configuration. For launch, CubeSats have to fit in a standardized CubeSat launcher or \gls{ppod}, making space constrained volume savings highly desired. Based on this research, a more sophisticated hinge utilizing Nitinol \gls{sma} could be used.  
+
+The purpose of this thesis was to explore a solution to these problems with a Nitinol \gls{sma} hinge. This hinge design was able to demonstrate concept feasibility, and functionality, but not reduced complexity, or bulk.
+% answer several research questions and research objectives which were: `Is the concept feasible?' `Does it reduce complexity, mass, and bulk?' and `Is it functional?' 
+The research objectives were: Develop a Nitinol hinge design, manufacture a representative prototype, characterize its force properties, and identify areas of improvement.
+
+The methodology of this work was first to learn how \gls{sma}s behave and determine the best way to work with them in order to be integrate them with a solar panel. For this, brainstorming sessions were held, and extensive preliminary testing was done to come up with an acceptable design. Then, it became a matter on how to best work with Nitinol and the  tools and material at hand. Several designs were built, and the lessons learned from that experience was used in building the final and simplest prototype. Finally, this prototype was used to conduct preliminary testing for movement and reaction times, and then on the actual force measurement experiments and relevant environment demonstrations, which lead to the reporting of the results and findings from the investigations.  
+
+% \begin{description}
+%  \item[$\bullet$]  \ Learn how the material works in theory
+%  \item[$\bullet$]  \ Brainstorm designs 
+%  \item[$\bullet$]  \ Figure out the best way to work with it
+%  \item[$\bullet$]  \ Attempt to build designs by trial and error; Learn how to work with material
+%  \item[$\bullet$]  \ Use lessons learned to build simplest prototype
+%  \item[$\bullet$]  \ Do preliminary testing for movement, reaction times
+%  \item[$\bullet$]  \ Run force measurement experiment
+%  \item[$\bullet$]  \ Run demonstrations
+%  \item[$\bullet$]  \ Report Findings and Results
+% \end{description}
+
+% From Chapter 1: Methodology Section
+% To achieve the first objective of this research the author worked closely with \gls{afit} technicians to brainstorm Nitinol hinge designs and various heating techniques. To achieve the second objective, a series of trial and error experiments along with \gls{cad} will be used to spot areas of improvement to be incorporated into the existing design. For the third objective, a manufacturing schedule will be laid out and materials required not currently in-house will be ordered with the intent to build two prototypes. 
+                                                                 
+
+%-----------------------------------------------------------------------
+\section{Discussion of Findings and Results}
+%-----------------------------------------------------------------------
+% Summary of Findings – In this discussion assert that you have answered your research questions.
+% Summary of chapter 3 and 4 basically
+
+This research demonstrated that the concept is feasible, and functional. However, at this early stage of technology development, the question of reduction of complexity, and bulk is still too early to answer. As it can be seen on the prototype, the radius of curvature of a 2 mm in diameter Nitinol rod is far too wide, at 12.1 mm, when compared to traditional hinge mechanisms that can fold 180\textdegree\ with a much smaller radius of curvature of 4.4 mm (as shown in Figure \ref{f:3U_Solar_Panel}). It was determined that the actuation volume for a Nitinol hinge with such a radius of curvature is about $7.864 \times 10^{-5}$ m$^3$, whereas a thin profile traditional spring hinge takes up only $5.675 \times 10^{-6}$ m$^3$. This is an order of magnitude less volume. %So the reduction in bulk is not quite there yet. As far as reduction in complexity, it is still undetermined. For integration, since soldering techniques failed, another mechanical way of integration had to be devised. 
+Therefore, in order to be comparable, a further reduction in bulk is required. 
+%This lead to the design and 3D printing of new solar panel holders to mount the solar panels to the test stand, so there were additional components incorporated onto the design which increased complexity and mass in a sense, but the concept still remains fairly simple.     
+This reduction has to occur while also utilizing screws, crimps, and harnesses as use of these materials is the best method for integrating a Nitinol hinge.  
+%-----------------------------------------------------------------------
+\section{Research Impact}
+%-----------------------------------------------------------------------
+% US Air Force, formation flying, swarms of satellites, great numbers. 
+% Increased of capability because more power is available with larger Solar Panels.
+
+The implications of this research are directly related to the future of the U.S. Air Force space operations. The ability to pack larger solar panels in the small CubeSat form factor is critical to continually improve their capabilities and performance. For disaggregated platforms to work, power-hungry payloads will start working their way to ever smaller form factors to include the CubeSat standard and the ability to provide those payloads with sufficient power for their operations is critical. Additionally, with the larger number of satellites that such architecture requires, ways of minimizing debris generation is important to keep the space environment as particle free as possible which can degrade equipment and shorten the lifespan of orbiting space systems. Further development of this technology can culminate in a more elegant solution to CubeSat solar panel deployment.     
+
+%-----------------------------------------------------------------------
+\section{Future Research Recommendations}
+%-----------------------------------------------------------------------
+
+There is certainly extensive of work ahead to perfect the use of \gls{sma}s for this application. One such series of testing that would make the proof of concept even more convincing is to test the hinge in a thermal vacuum chamber to simulate the thermal conditions of orbit and characterize its performance. A test could be devised to measure the force produced by the hinge in line of sight of the Sun and in the shade. This would inform the researchers if the Nitinol activation temperature needs to be changed for improved operations, how Nitninol operates in a vacuum, how the current-force relation reacts to such temperature swings, and if there is any material degradation such as embrittlement, or something similar. 
+
+Further design work, to more seamlessly integrate solar panels with Nitinol and Nitinol with the CubeSat bus should be explored further in order to work the issues of bulk and complexity which were left unresolved in this first iteration. Also, vibration testing of a deployed panel and hinge should be considered. Moreover, further packing and integration engineering is necessary to refine an efficient method to stow large, foldable solar arrays that uses Nitinol hinges. This vibration testing would also ensure that the \gls{nasa} \gls{gevs} standards are met adding confidence to its viability after going through the traumatic experience of launch. This would raise overall confidence of this proof of concept.  
+
+To finalize, the possibility of utilizing two-way \gls{sma} on the hinge is enticing. Two-way \gls{sma} can move back and forth from two preset positions. This could be of interest for future solar panel actuation possibly eliminating the use of solar array drive assemblies, or utilizing temperature phasing for a passive control system. 
+
+% If time allows, characterize dynamic behavior when subjected to the launch and space environment, and finally verify its viability and proper functioning after thermo-vacuum and vibration testing.  
+% - Does it survive the launch and space environment?
+% - Verify survivability of launch and space environment 
+%  --Characterize its dynamic behavior when subjected to the launch and space environment
+% - Verify its viability and proper functioning after thermo-vacuum and vibration testing
+
+% For the fourth and fifth objectives one of the two prototypes will be used for extensive environmental testing in an attempt to increase confidence in the community of its use. 
+
+% , thermo-vacuum chamber, and vibration testing table.
+
+% [The difference between the two 2.2A and 12V tests, why is that. Is there material degradation?]
+
+%-----------------------------------------------------------------------
+\section{Conclusions}
+%-----------------------------------------------------------------------
+Much was learned by embarking on this research, especially of the legacy that \gls{sma}s have starting in the 1960's and of their peculiar material properties. Their use has expanded to many industries and in the 1990's its application has really taken off to a much wider variety of use. The aerospace industry is at the forefront of innovation and by investigating additional uses of \gls{sma}s in CubeSats that tradition is continued. The U.S. Air Force has much to gain from this research as its interest in small satellites increases for disaggregated space architectures, and rapid technology development. This research has demonstrated that a Nitinol hinge for CubeSat solar panels is feasible and functional, but its design has to be refined in order to be practical.    
+
+% %-----------------------------------------------------------------------
+% \section{Equations}
+% %-----------------------------------------------------------------------
+    
+% \begin{equation}
+% \label{e:visc}
+% \tau_{xy}=\mu\frac{d\theta}{dt}=\mu\frac{du}{dy}
+% \end{equation}
+% \nomenclature{$\tau_{xy}$}{Shear Stress}
+% \nomenclature{$\mu$}{Dynamic Viscosity}
+
+% It may sometimes be best to use subequations as opposed to a single equations, depending on context. Equations and sub equations can easily be referenced. The nomenclature package allows calling of variables where they are used. There are ways to define classes of variables to be listed together in the nomenclature, but time is probably better spent elsewhere. An alternative method is to define symbols as acronyms so that the same rules are used for extended definitions. That way is stupid and inefficient. If you want to math it up in the text, simply use \$ on either side of the commands like $q=\frac{1}{2}\rho V^2$.
+
+% \begin{subequations}
+% 	\begin{equation}
+% 	\label{e:Rey_dyn}
+% 	Re=\frac{\rho VL}{\mu}
+% 	\end{equation}
+% 	\begin{equation}
+% 	\label{e:Rey_kin}
+% 	Re=\frac{VL}{\nu}
+% 	\end{equation}
+% \end{subequations}
+% \nomenclature{$Re$}{Reynolds Number}
+% \nomenclature{$\rho$}{Density}
+% \nomenclature{$V$}{Fluid Velocity}
+% \nomenclature{$L$}{Characteristic Length}
+% \nomenclature{$\nu$}{Kinematic Viscosity}
+
+% For those trying to do more advanced math commands, \verb|\begin{aligned}| starts an environment that aligns equations to \& placement. Something like this can be used to align a family of equations to the = sign as shown below.
+
+% \begin{equation}
+% \begin{aligned}
+% D=& 140\quad in=3.556\quad m\\
+% \rho=&1.18\quad\frac{kg}{m^3}\\
+% \mu=& 18\times10^{-6}\quad \frac{kg}{m\cdot s}\\
+% t=&120\quad days=2880\quad hrs 
+% \end{aligned}
+% \tag{\ref{e:Rey_dyn} revisited}
+% \label{e:wrong}
+% \end{equation}
+
+% The aligned environment can be contained in braces as shown below, but brackets, parenthesis, etc. will work as well. Notice how in that last equation I manually defined the tag to \ref{e:wrong}, and referenced it to one of the previous equations.
+
+% \begin{equation}
+% N=\left\lbrace\begin{aligned}
+% N_{10}\\  % Notice that subscripts of multiple characters need to be in {}'s
+% N_{20}\\
+% N_{40}
+% \end{aligned}\right\rbrace=\left\lbrace\begin{aligned}
+% 10\\
+% 20\\
+% 40\end{aligned}\right\rbrace RPM\quad=\quad\left\lbrace\begin{aligned}
+% 0.167\\
+% 0.333\\
+% 0.667
+% \end{aligned}\right\rbrace\frac{rev}{s}
+% \end{equation}
+% \nomenclature{$N_i$}{Rotational Rate, Indexed}
+
+% Discussion: Characterize its force properties. Experiment
